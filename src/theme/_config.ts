@@ -9,6 +9,7 @@ const colorsLight = {
 	gray200: '#A1A1A1',
 	gray100: '#DFDFDF',
 	gray50: '#EFEFEF',
+	gray0: '#FFFFFF',
 	purple500: '#44427D',
 	purple100: '#E1E1EF',
 	purple50: '#1B1A23',
@@ -21,12 +22,13 @@ const colorsDark = {
 	gray200: '#BABABA',
 	gray100: '#000000',
 	gray50: '#EFEFEF',
+	gray0: '#FFFFFF',
 	purple500: '#A6A4F0',
 	purple100: '#252732',
 	purple50: '#1B1A23',
 } as const;
 
-const sizes = [12, 16, 24, 32, 40, 80] as const;
+const sizes = [2, 4, 6, 8, 10, 12, 16, 18, 20, 24, 32, 40, 80] as const;
 
 export const config = {
 	colors: colorsLight,
@@ -43,7 +45,7 @@ export const config = {
 	},
 	navigationColors: {
 		...DefaultTheme.colors,
-		background: colorsLight.gray50,
+		background: colorsLight.gray0,
 		card: colorsLight.gray50,
 	},
 	variants: {

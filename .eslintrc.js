@@ -40,8 +40,10 @@ module.exports = {
 	},
 	rules: {
 		'@typescript-eslint/no-unused-vars': 'error',
+		'@typescript-eslint/no-use-before-define': 'off',
 		'global-require': 0,
 		'react-hooks/exhaustive-deps': 'off',
+		'react/function-component-definition': 'off',
 		quotes: ['error', 'single'],
 		'object-curly-spacing': ['error', 'always'],
 		'array-bracket-spacing': ['error', 'never'],
@@ -61,19 +63,6 @@ module.exports = {
 		'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
 		'react/display-name': 'off',
 		'no-console': ['error', { allow: ['error'] }],
-		'prettier/prettier': [
-			'error',
-			{
-				printWidth: 80,
-				endOfLine: 'lf',
-				tabWidth: 2,
-				indentStyle: 'space',
-				useTabs: true,
-				arrowParens: 'avoid',
-				bracketSameLine: false,
-				singleQuote: true,
-				trailingComma: 'all',
-			},
-		],
+		'prettier/prettier': ['error', {}],
 	},
 };
